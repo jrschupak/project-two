@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fishing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link rel="EditURI" type="application/rsd+xml" href="http://www.mediawiki.org/w/api.php?action=rsd"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+
+    </script>
+  </head>
+  <body>
+    <!-- <div class="img">
+      <img src="images/cove.gif">
+    </div> -->
+    <form>
+      Type of Fish: <input id="fish-input" type="text" value="Bluefish">
+    </form>
+
+    <div class="enter">
+      <button id="enter-button" type="button" name="button">ENTER</button>
+    </div>
+
+    <script id="fish-template" type="text/x-handlebars-template" charset="utf-8">
+    {{#each this}}
+      <h1><center>{{title}}</center></h1>
+    {{/each}}
+    <br><br>{{pageText}}
+    </script>
+
+
+
+
+  </body>
+  <script src="ajax.js"></script>
+  <script src="main.js"></script>
+</html>
