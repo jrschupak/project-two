@@ -30,10 +30,16 @@
     <br><br>{{pageText}}
     </script>
 
-
+    <script id="giphy-template" type="text/x-handlebars-template" charset="utf-8">
+      <img src="{{data.images.downsized.url}}">
+    </script>
 
 
   </body>
-  <script src="ajax.js"></script>
+
+  <script src="giphyApi.js"></script>
+  <script src="onenameKEYS.js"></script>
+  <script src="onenameAPI.js"></script>
   <script src="main.js"></script>
+
 </html>

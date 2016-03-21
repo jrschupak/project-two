@@ -1,3 +1,6 @@
+//The code on this page is not mine. Copied and pasted from some wikipedia source I do not remember.
+//I am NOT currently using any of this code. It is just saved here for future purposes.
+
 "use strict";
 
 var txtwiki = (function(){

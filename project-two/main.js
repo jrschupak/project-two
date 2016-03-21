@@ -10,6 +10,7 @@ var enterButton = document.getElementById('enter-button');
 console.log(enterButton);
 enterButton.addEventListener("click", function(){
 
+  onename();
   form.style.display = "block";
   console.log("event listener working!");
   var enterEl = document.querySelector('.enter');
@@ -36,7 +37,7 @@ enterButton.addEventListener("click", function(){
 
   var fishEl = document.createElement('p');
   fishEl.setAttribute("class","fish");
-  fishEl.innerHTML = "This is the container for fish";
+  // fishEl.innerHTML = "This is the container for fish";
   fishEl.style.color = "white"
 
   body.appendChild(fishEl);
@@ -53,6 +54,7 @@ enterButton.addEventListener("click", function(){
     fishButton.addEventListener("click", function(){
       console.log("button eventListener is working");
 
+
       var fishInput = document.getElementById('fish-input').value;
       console.log(fishInput);
 
@@ -64,7 +66,7 @@ enterButton.addEventListener("click", function(){
         // type: 'POST',
         // headers: { 'Api-User-Agent': 'Example/1.0' }
       }).done(function(response){
-
+        giphyApi();
         console.log(response);
         // console.log(response.query.pages[47576].revisions[0]['*']);
         var pagesObj = response.query.pages;
@@ -72,7 +74,7 @@ enterButton.addEventListener("click", function(){
         console.log(idObject);
         var pageId = idObject[Object.keys(idObject)[0]];
         console.log(pageId);
-        // if(pageId === ){
+        // if(pagesObj. === ){
         //   alert(fishInput + "is not a valid input");
         // }
         // var revisions = revisions[0]['*'];

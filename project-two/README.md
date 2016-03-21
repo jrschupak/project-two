@@ -1,3 +1,5 @@
+Original Plan:
+
 Enter buttons take you to main page
 
 API for tide chart or tide times.
@@ -14,5 +16,11 @@ Show fish in the area
     night or day
   Size limits
 
+Results of attempting the above:
+  -Could not find a quality working API for any of the conditions.
+  -I had a lot of trouble finding a quality API that had a large enough amount of data or had a clear syntax for the query. I did find a few that I liked but constantly ran into issues getting the "cross origin" error.
+  -The only API the had enough data to use was wikipedia so I used that but struggled with converting the WikiText to plain text.
 
-  IF NEEDED USE THE FILTER FUNCTION TO LOOK UP (ZIPCODE or TYPE OF FISH or Whatever) 
+I wanted to add more APIs so I attempted to add Onename's api but could not get it to grab the object due to cross origin issues.
+
+I also wanted to try and put an ajax call in an ajax call even if they were unrelated and the second one was not dependent on the first. I decided to add a Giphy when the user clicked a button at the bottom of the page but only after the first AJAX call.
